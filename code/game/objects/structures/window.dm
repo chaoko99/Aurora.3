@@ -423,8 +423,12 @@
 	damage_per_fire_tick = 2.0
 	maxhealth = 12.0
 
+/obj/structure/window/basic/full
+	dir = 5
+	maxhealth = 48
+
 /obj/structure/window/phoronbasic
-	name = "phoron window"
+	name = "borosilicate window"
 	desc = "A borosilicate alloy window. It seems to be quite strong."
 	basestate = "phoronwindow"
 	icon_state = "phoronwindow"
@@ -432,7 +436,12 @@
 	glasstype = /obj/item/stack/material/glass/phoronglass
 	maximal_heat = T0C + 2000
 	damage_per_fire_tick = 1.0
-	maxhealth = 40.0
+	maxhealth = 50.0
+
+/obj/structure/window/phoronbasic/full
+	maxhealth = 200.0
+	dir = 5
+
 
 /obj/structure/window/phoronreinforced
 	name = "reinforced borosilicate window"
@@ -446,7 +455,9 @@
 	damage_per_fire_tick = 1.0 // This should last for 80 fire ticks if the window is not damaged at all. The idea is that borosilicate windows have something like ablative layer that protects them for a while.
 	maxhealth = 80.0
 
-
+/obj/structure/window/phoronreinforced/full
+	maxhealth = 320.0
+	dir = 5
 /obj/structure/window/reinforced
 	name = "reinforced window"
 	desc = "It looks rather strong. Might take a few good hits to shatter it."
@@ -467,8 +478,9 @@
 		state = 0
 
 /obj/structure/window/reinforced/full
-    dir = 5
-    icon_state = "fwindow"
+	maxhealth = 160.0
+	dir = 5
+	icon_state = "fwindow"
 
 /obj/structure/window/reinforced/tinted
 	name = "tinted window"
