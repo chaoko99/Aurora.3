@@ -246,3 +246,6 @@
 	new /obj/item/clothing/mask/gas/sexymime(src.loc)
 	new /obj/item/clothing/under/sexymime(src.loc)
 	delete_me = 1
+
+/obj/effect/landmark/MAPAFUCKINGDOOR
+	icon_state = "pocket"
